@@ -4,8 +4,24 @@
 
 {% block content %}
 
-<div class="container my-5">
-    <img src="/static/img/Ping!.png"/>
+<div class="container-fluid h-40 bg-index mb-5">
+    <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col">
+            <img src="/static/img/Ping!.png" class="img-fluid my-auto"/>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% for post in posts %}
+            <div class="col-6 col-lg-4 text-center">
+                <a href="{{ post.link }}">
+                    <img src="media/{{ post.img }}" class="post-img img-fluid">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 
 {% endblock %}

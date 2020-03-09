@@ -4,8 +4,27 @@ html, body {
     font-family: 'Rubik', sans-serif!important;
 }
 
+.h-40 {
+    height: 40%!important;
+}
+
 .bg-login-image {
     background: url("../img/Slide1.PNG");
     background-position: center;
     background-size: cover;
+}
+
+.bg-index {
+    background: url("../img/bg.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 5, 5, 0.5))), url("../img/bg.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 100%), url("../img/bg.jpg");  
+    background-position: center;
+    background-size: cover;  
+}
+
+.post-img {
+    /* width: 5; */
+    /* height: 500px; */
+    margin: 10px;
+    border: 5px solid black;
 }
