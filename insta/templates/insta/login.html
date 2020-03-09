@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid h-100 bg-dark">
+    <div class="row h-100 align-items-center">
+        <div class="col">
+            <div class="container h-25 text-white w-100 rounded">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <div class="col text-center">
+                        <h1 class="display-1">Login</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5 p-5 rounded bg-light">
+                <div class="row">
+                    <div class="col">
+                        <form method="post" action="{% url 'insta:login' %}">
+                            {% csrf_token %}
+                            <div class="form-group row">
+                                <label htmlFor="username" class="col-sm-2 col-form-label font-weight-bold">Username</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="username" id="username" required/>
+                                </div>
+                            </div>
+        
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label font-weight-bold">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="password" id="password" required></input>
+                                </div>
+                            </div>
+        
+                            <button type="submit" class="btn btn-secondary w-100 my-2">Go!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+html, body {
+    width: 100%!important;
+    height: 100%!important;
+    font-family: 'Rubik', sans-serif!important;
+}
+
+.bg-login-image {
+    background: url("../img/Slide1.PNG");
+    background-position: center;
+    background-size: cover;
+}
