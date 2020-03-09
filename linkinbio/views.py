@@ -24,4 +24,4 @@ def user_login(request):
             print("They used username: {} and password: {}".format(username,password))
             return HttpResponse("Invalid login details given")
     else:
-        return render(request, 'dashboard/login.html')
+        return render(request, 'insta/login.html')

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid bg-dark">
+    <div class="row h-100">
+        <div class="col">
+            <div class="container h-25 text-white w-100 rounded">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <div class="col text-center">
+                        <h1 class="display-1">Login</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5 rounded bg-light">
+                <form>
+
+                    <div class="form-group row">
+                        <label htmlFor="email" class="col-sm-2 col-form-label font-weight-bold">Email address</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="joe@email.com" required/>
+                            <small class="form-text text-muted">This is used to log into the portal</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label font-weight-bold">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" name="password" id="password" required></input>
+                            <small class="form-text text-muted">Remember the password</small>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 my-5">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
