@@ -44,4 +44,3 @@ def create_post(request):
     else:
         form = NewPost()
     return render(request, 'insta/create-post.html')
-
