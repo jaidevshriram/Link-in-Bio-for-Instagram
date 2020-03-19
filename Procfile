@@ -1,1 +1,1 @@
-web: gunicorn linkinbio.wsgi --log-file -i
+web: gunicorn linkinbio.wsgi
