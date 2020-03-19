@@ -24,7 +24,7 @@ SECRET_KEY = '&$06!ikh$)cz1b(wf5itc7bzy0m&_1q87$j7u6^8tyfhxst&dj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['test-linkinbio-jd.herokuapp.com']
+ALLOWED_HOSTS = ['test-linkinbio-jd.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -121,7 +121,6 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_URL = '/static/'
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
