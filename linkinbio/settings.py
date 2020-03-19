@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'wsgi.application'
+WSGI_APPLICATION = 'linkinbio.wsgi.application'
 
 import dotenv
 import dj_database_url
