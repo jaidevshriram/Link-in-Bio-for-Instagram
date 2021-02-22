@@ -10,11 +10,12 @@ A free version of linkin.bio for organizations to attach links to instagram post
 
 ## Set up
 
-Create a python3 virtual environment and [https://docs.djangoproject.com/en/3.1/topics/install/](install Django). Then, install the packages listed in requirements.txt. Once the packages are installed, run the following:
+Create a python3 virtual environment and [install Django](https://docs.djangoproject.com/en/3.1/topics/install). Then, install the packages listed in requirements.txt. Once the packages are installed, run the following:
 
 <code>
   python manage.py migrate
 </code>
+
 
 Then, you can run the application using 
 
